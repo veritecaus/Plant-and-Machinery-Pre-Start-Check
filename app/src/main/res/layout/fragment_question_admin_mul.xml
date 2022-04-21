@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:id="@+id/contraintLayoutQuestionAdminMul">
+
+            <TextView
+                android:id="@+id/textViewFragmentQuestionAdminMultitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/fragment_question_admin_title"
+                android:textSize="34sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextFragmentQuestionAdminMulTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textViewFragmentQuestionAdminMultitle"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFragmentQuestionAdminMultitle" />
+
+            <TextView
+                android:id="@+id/textViewFragmentQuestionAdminMulSeq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/fragment_question_admin_sequence"
+                android:textSize="34sp"
+                app:layout_constraintStart_toStartOf="@+id/editTextFragmentQuestionAdminMulComment"
+                app:layout_constraintTop_toBottomOf="@+id/editTextFragmentQuestionAdminMulComment" />
+
+            <EditText
+                android:id="@+id/editTextFragmentQuestionAdminMulSeq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/textViewFragmentQuestionAdminMulSeq"
+                app:layout_constraintTop_toTopOf="@+id/textViewFragmentQuestionAdminMulSeq" />
+
+            <Switch
+                android:id="@+id/switchFragmentQuestionAdminMulActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/fragment_question_admin_enabled"
+                android:textSize="34sp"
+                app:layout_constraintStart_toStartOf="@+id/textViewFragmentQuestionAdminMulSeq"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFragmentQuestionAdminMulSeq" />
+
+            <Switch
+                android:id="@+id/switchQuestionAdminMulIsCritical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/fragment_question_admin_is_critical"
+                android:textSize="34sp"
+                app:layout_constraintStart_toStartOf="@+id/switchFragmentQuestionAdminMulRandomize"
+                app:layout_constraintTop_toBottomOf="@+id/switchFragmentQuestionAdminMulRandomize" />
+
+            <Switch
+                android:id="@+id/switchFragmentQuestionAdminMulMechOp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/fragment_question_admin_enable_machine"
+                android:textSize="34sp"
+                app:layout_constraintStart_toStartOf="@+id/switchQuestionAdminMulIsCritical"
+                app:layout_constraintTop_toBottomOf="@+id/switchQuestionAdminMulIsCritical" />
+
+            <TextView
+                android:id="@+id/textViewFragmentAdminMulCustomField1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/fragment_question_admin_custom_field_1"
+                android:textSize="34sp"
+                app:layout_constraintStart_toStartOf="@+id/switchFragmentQuestionAdminMulMechOp"
+                app:layout_constraintTop_toBottomOf="@+id/switchFragmentQuestionAdminMulMechOp" />
+
+
+            <TextView
+                android:id="@+id/textViewFragmentAdminMulTimeout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/fragment_question_admin_timeout"
+                android:textSize="34sp"
+                app:layout_constraintStart_toStartOf="@+id/editTextFragmentQuestionAdminMulCustomField"
+                app:layout_constraintTop_toBottomOf="@+id/editTextFragmentQuestionAdminMulCustomField" />
+
+            <EditText
+                android:id="@+id/editTextFragmentQuestionAdminMulTimeout"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/textViewFragmentAdminMulTimeout"
+                app:layout_constraintTop_toTopOf="@+id/textViewFragmentAdminMulTimeout" />
+
+
+            <EditText
+                android:id="@+id/editTextFragmentQuestionAdminMulCustomField"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textViewFragmentAdminMulCustomField1"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFragmentAdminMulCustomField1" />
+
+            <TextView
+                android:id="@+id/textViewFragmentAdminMulExpectedAns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/settings_caption_expected_answer"
+                android:textSize="34sp"
+                app:layout_constraintStart_toStartOf="@+id/textViewFragmentAdminMulTimeout"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFragmentAdminMulTimeout" />
+
+            <EditText
+                android:id="@+id/editTextFragmentQuestionAdminMulExpectedAns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toEndOf="@+id/textViewFragmentAdminMulExpectedAns"
+                app:layout_constraintTop_toTopOf="@+id/textViewFragmentAdminMulExpectedAns" />
+
+            <Switch
+                android:id="@+id/switchFragmentQuestionAdminMulRandomize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/fragment_question_admin_is_random"
+                android:textSize="@dimen/prestart_standard_text_size"
+                app:layout_constraintStart_toStartOf="@+id/switchFragmentQuestionAdminMulActive"
+                app:layout_constraintTop_toBottomOf="@+id/switchFragmentQuestionAdminMulActive" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/fragment_question_admin_image_title"
+                android:textSize="@dimen/prestart_standard_text_size"
+                app:layout_constraintStart_toStartOf="@+id/textViewFragmentAdminMulExpectedAns"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFragmentAdminMulExpectedAns" />
+
+            <ImageView
+                android:id="@+id/imageViewFragmentQuestionAdminMul"
+                android:layout_width="@dimen/image_preview_width"
+                android:layout_height="@dimen/image_preview_height"
+                android:layout_marginStart="32dp"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toTopOf="@+id/textView4"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/buttonFragmentQuestionAdminMulBrowse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/fragment_question_admin_image_button_browse"
+                app:layout_constraintStart_toEndOf="@+id/imageViewFragmentQuestionAdminMul"
+                app:layout_constraintTop_toTopOf="@+id/imageViewFragmentQuestionAdminMul" />
+
+            <Button
+                android:id="@+id/buttonFragmentQuestionAdminMulClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/fragment_question_admin_image_clear"
+                app:layout_constraintStart_toStartOf="@+id/buttonFragmentQuestionAdminMulBrowse"
+                app:layout_constraintTop_toBottomOf="@+id/buttonFragmentQuestionAdminMulBrowse" />
+
+            <TextView
+                android:id="@+id/textViewFragmentQuestionAdminMulComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/fragment_question_admin_comment"
+                android:textSize="@dimen/prestart_standard_text_size"
+                app:layout_constraintStart_toStartOf="@+id/editTextFragmentQuestionAdminMulTitle"
+                app:layout_constraintTop_toBottomOf="@+id/editTextFragmentQuestionAdminMulTitle" />
+
+            <EditText
+                android:id="@+id/editTextFragmentQuestionAdminMulComment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/prestart_standard_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textViewFragmentQuestionAdminMulComment"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFragmentQuestionAdminMulComment" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

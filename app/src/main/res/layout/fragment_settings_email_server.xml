@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewFragmentSettingsEmailServerTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/caption_settings_email_server"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFragmentSettingsEmailServerFromAddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/caption_settings_email_server_from_address"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentSettingsEmailServerTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentSettingsEmailServerTitle" />
+
+    <EditText
+        android:id="@+id/editTextFragmentEmailFromAddr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewFragmentSettingsEmailServerFromAddr"
+        app:layout_constraintTop_toTopOf="@+id/textViewFragmentSettingsEmailServerFromAddr" />
+
+    <TextView
+        android:id="@+id/textViewFragmentSettingsEmailServerSMTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/caption_settings_email_server_smtp"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintEnd_toEndOf="@+id/textViewFragmentSettingsEmailServerFromAddr"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentSettingsEmailServerFromAddr" />
+
+    <EditText
+        android:id="@+id/editTextFragmentSettingsEmailServerSMTP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextFragmentEmailFromAddr"
+        app:layout_constraintTop_toTopOf="@+id/textViewFragmentSettingsEmailServerSMTP" />
+
+    <TextView
+        android:id="@+id/textViewFragmentSettingsEmailServerPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/caption_settings_email_server_smtp_port"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintEnd_toEndOf="@+id/textViewFragmentSettingsEmailServerSMTP"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentSettingsEmailServerSMTP" />
+
+    <EditText
+        android:id="@+id/editTextFragmentSettingsEmailServerPort"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextFragmentSettingsEmailServerSMTP"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentSettingsEmailServerSMTP" />
+
+    <Spinner
+        android:id="@+id/spinnerFragmentSettingsEmailServerSecurityType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextFragmentSettingsEmailServerPort"
+        app:layout_constraintTop_toTopOf="@+id/textViewFragmentSettingsEmailSereverSecurityType" />
+
+    <TextView
+        android:id="@+id/textViewFragmentSettingsEmailSereverSecurityType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/caption_settings_email_server_security_type"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintEnd_toEndOf="@+id/textViewFragmentSettingsEmailServerPort"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFragmentSettingsEmailServerPort" />
+
+    <Switch
+        android:id="@+id/switchFragmentSettingsEmailServerSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/caption_settings_email_server_requires_sign_in"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintStart_toStartOf="@+id/spinnerFragmentSettingsEmailServerSecurityType"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentSettingsEmailSereverSecurityType" />
+
+    <TextView
+        android:id="@+id/textViewFragmentSettingsEmailServerUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/caption_settings_email_server_user_name"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintEnd_toEndOf="@+id/textViewFragmentSettingsEmailSereverSecurityType"
+        app:layout_constraintTop_toBottomOf="@+id/switchFragmentSettingsEmailServerSignIn" />
+
+    <EditText
+        android:id="@+id/editTextFragmentSettingsEmailServerUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/switchFragmentSettingsEmailServerSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/switchFragmentSettingsEmailServerSignIn" />
+
+    <TextView
+        android:id="@+id/textViewFragmentSettingsEmailServerPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/caption_settings_email_server_password"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintEnd_toEndOf="@+id/textViewFragmentSettingsEmailServerUserName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFragmentSettingsEmailServerUserName" />
+
+    <EditText
+        android:id="@+id/editTextFragmentSettingsEmailServerPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextFragmentSettingsEmailServerUserName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFragmentSettingsEmailServerUserName" />
+
+    <Button
+        android:id="@+id/buttonTestEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/caption_settings_email_server_test"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintEnd_toStartOf="@+id/editTextFragmentSettingsEmailServerPassword"
+        app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/textViewFragmentSettingsEmailServerPassword"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

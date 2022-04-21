@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewContentReportLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewContentReportLineSection"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewContentReportLine"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewContentReportLineRespCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/operator_resp_label"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewContentReportLine"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContentReportLineQuestion" />
+
+    <TextView
+        android:id="@+id/textViewContentReportLineOpResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewContentReportLine"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContentReportLineRespCaption" />
+
+    <TextView
+        android:id="@+id/textViewContentReportLineExRespCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/expected_resp_label"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewContentReportLine"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContentReportLineOpResp" />
+
+    <TextView
+        android:id="@+id/textViewContentReportLineQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewContentReportLine"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContentReportLineSection" />
+
+    <TextView
+        android:id="@+id/textViewContentReportLineExResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewContentReportLine"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContentReportLineExRespCaption" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="599dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContentReportLineExResp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

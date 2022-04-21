@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/textViewFragmentRiskNoticeCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:padding="12sp"
+            android:text="@string/risk_warning"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFragmentRiskNoticeExpectedRespLabel" />
+
+        <Button
+            android:id="@+id/buttonFragmentRiskNoticeAccept"
+            android:layout_width="150sp"
+            android:layout_height="80sp"
+            android:layout_marginStart="16dp"
+            android:text="@string/accept"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonFragmentRiskNoticeReject"
+            app:layout_constraintTop_toTopOf="@+id/buttonFragmentRiskNoticeReject" />
+
+        <Button
+            android:id="@+id/buttonFragmentRiskNoticeReject"
+            android:layout_width="150sp"
+            android:layout_height="80sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="56dp"
+            android:enabled="false"
+            android:text="@string/reject"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/buttonFragmentRiskNoticeAccept"
+            app:layout_constraintStart_toStartOf="@+id/textViewFragmentRiskNoticeCaption"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFragmentRiskNoticeCaption" />
+
+        <TextView
+            android:id="@+id/textViewFragmentRiskNoticeQuestion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewFragmentRiskNoticeOpRespLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/operator_resp_label"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFragmentRiskNoticeQuestion" />
+
+        <TextView
+            android:id="@+id/textViewFragmentRiskNoticeOpAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:textSize="34sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewFragmentRiskNoticeOpRespLabel"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFragmentRiskNoticeQuestion" />
+
+        <TextView
+            android:id="@+id/textViewFragmentRiskNoticeExpectedRespLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/expected_resp_label"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="@+id/textViewFragmentRiskNoticeOpRespLabel"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFragmentRiskNoticeOpRespLabel" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:textSize="34sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewFragmentRiskNoticeExpectedRespLabel"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFragmentRiskNoticeOpRespLabel" />
+
+        <TextView
+            android:id="@+id/textViewFragmentRiskNoticeOpResp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:textSize="34sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewFragmentRiskNoticeOpRespLabel"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFragmentRiskNoticeQuestion" />
+
+        <TextView
+            android:id="@+id/textViewFragmentRiskNoticeExpectedResp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:textSize="34sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewFragmentRiskNoticeExpectedRespLabel"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFragmentRiskNoticeOpResp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

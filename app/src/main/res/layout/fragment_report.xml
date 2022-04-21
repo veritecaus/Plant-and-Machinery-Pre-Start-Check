@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize">
+
+    <Switch
+        android:id="@+id/switchFragmentReportsStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Start date"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFragmentReportsExport"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/export"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchFragmentReportGetAll" />
+
+    <Switch
+        android:id="@+id/switchFragmentReportGetAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/fragment_report_get_all"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintEnd_toEndOf="@+id/switchFragmentReportsEndDate"
+        app:layout_constraintTop_toBottomOf="@+id/switchFragmentReportsEndDate" />
+
+    <Button
+        android:id="@+id/buttonFragmentReportsEmail"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginEnd="32dp"
+        android:text="@string/button_label_email"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonFragmentReportsExport"
+        app:layout_constraintTop_toTopOf="@+id/buttonFragmentReportsExport" />
+
+    <Spinner
+        android:id="@+id/spinnerFragmentReportsSDDay"
+        android:layout_width="86dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/switchFragmentReportsStartDate"
+        app:layout_constraintTop_toTopOf="@+id/switchFragmentReportsStartDate" />
+
+    <TextView
+        android:id="@+id/textViewFragmentReportsEmailSlash1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="/"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintStart_toEndOf="@+id/spinnerFragmentReportsSDDay"
+        app:layout_constraintTop_toTopOf="@+id/spinnerFragmentReportsSDDay" />
+
+    <Spinner
+        android:id="@+id/spinnerFragmentReportsSDMonth"
+        android:layout_width="86dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewFragmentReportsEmailSlash1"
+        app:layout_constraintTop_toTopOf="@+id/spinnerFragmentReportsSDDay" />
+
+    <TextView
+        android:id="@+id/textViewFragmentReportsEmailSlash2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="/"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintStart_toEndOf="@+id/spinnerFragmentReportsSDMonth"
+        app:layout_constraintTop_toTopOf="@+id/spinnerFragmentReportsSDDay" />
+
+    <Spinner
+        android:id="@+id/spinnerFragmentReportsSDYear"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewFragmentReportsEmailSlash2"
+        app:layout_constraintTop_toTopOf="@+id/spinnerFragmentReportsSDDay" />
+
+
+    <Switch
+        android:id="@+id/switchFragmentReportsEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="End date"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintEnd_toEndOf="@+id/switchFragmentReportsStartDate"
+        app:layout_constraintTop_toBottomOf="@+id/switchFragmentReportsStartDate" />
+
+    <Spinner
+        android:id="@+id/spinnerFragmentReportsEDDay"
+        android:layout_width="86dp"
+        android:layout_height="48dp"
+
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/spinnerFragmentReportsSDDay"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerFragmentReportsSDDay" />
+
+    <TextView
+        android:id="@+id/textViewFragmentReportsEmailSlash3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="/"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintStart_toEndOf="@+id/spinnerFragmentReportsEDDay"
+        app:layout_constraintTop_toTopOf="@+id/spinnerFragmentReportsEDDay" />
+
+
+    <Spinner
+        android:id="@+id/spinnerFragmentReportsEDMonth"
+        android:layout_width="86dp"
+        android:layout_height="48dp"
+
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewFragmentReportsEmailSlash3"
+        app:layout_constraintTop_toTopOf="@+id/spinnerFragmentReportsEDDay" />
+
+    <TextView
+        android:id="@+id/textViewFragmentReportsEmailSlash4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="/"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintStart_toEndOf="@+id/spinnerFragmentReportsEDMonth"
+        app:layout_constraintTop_toTopOf="@+id/spinnerFragmentReportsEDDay" />
+
+    <Spinner
+        android:id="@+id/spinnerFragmentReportsEDYear"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewFragmentReportsEmailSlash4"
+        app:layout_constraintTop_toTopOf="@+id/spinnerFragmentReportsEDDay" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

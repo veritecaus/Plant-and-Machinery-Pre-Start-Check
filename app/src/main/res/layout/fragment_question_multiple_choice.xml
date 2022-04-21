@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize">
+
+
+        <TextView
+            android:id="@+id/textViewFragmentQuestionMultipleChoiceTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="This is a multiple choice question"
+            android:textSize="@dimen/prestart_standard_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewFragmentQuestionMultipleChoice"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewFragmentQuestionMultipleChoiceStatus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewFragmentQuestionMultipleChoice" />
+
+        <TextView
+            android:id="@+id/textViewFragmentQuestionMultipleChoiceStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            android:text="Question 3 of 40"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewFragmentQuestionMultipleChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFragmentQuestionMultipleChoiceComment"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textViewFragmentQuestionMultipleChoiceComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Comment"
+            android:textSize="@dimen/prestart_standard_text_size_smaller"
+            app:layout_constraintEnd_toEndOf="@+id/textViewFragmentQuestionMultipleChoiceTitle"
+            app:layout_constraintStart_toStartOf="@+id/textViewFragmentQuestionMultipleChoiceTitle"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFragmentQuestionMultipleChoiceTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

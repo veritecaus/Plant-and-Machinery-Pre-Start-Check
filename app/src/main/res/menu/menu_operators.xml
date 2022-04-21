@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item_show_users_add_user"
+        android:title="Add"
+        android:icon="@drawable/outline_add_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_item_show_users_superversor_logout"
+        android:title="@string/fragment_logout_button_logout"
+        android:visible="false"
+        app:showAsAction="always|withText"/>
+
+</menu>

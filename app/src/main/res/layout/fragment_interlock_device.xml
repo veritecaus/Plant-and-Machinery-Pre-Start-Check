@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".console.FragmentInterlockDevice">
+
+
+    <Switch
+        android:id="@+id/switchFragmentInterlockDeviceState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="@android:dimen/notification_large_icon_height"
+        android:text="@string/fragment_interlock_device_state"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFragmentInterlockDeviceFINSClientNode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/fragment_interlock_device_client_node"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintStart_toStartOf="@+id/switchFragmentInterlockDeviceState"
+        app:layout_constraintTop_toBottomOf="@+id/switchFragmentInterlockDeviceState" />
+
+    <TextView
+        android:id="@+id/textViewFragmentInterlockDeviceFINSServerNode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/fragment_interlock_device_server_node"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentInterlockDeviceFINSClientNode"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentInterlockDeviceFINSClientNode" />
+
+    <EditText
+        android:id="@+id/editTextFragmentInterlockDeviceFINSClientNode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textViewFragmentInterlockDeviceFINSClientNode"
+        app:layout_constraintTop_toTopOf="@+id/textViewFragmentInterlockDeviceFINSClientNode" />
+
+    <EditText
+        android:id="@+id/editTextFragmentInterlockDeviceFINSServerNode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textViewFragmentInterlockDeviceFINSClientNode"
+        app:layout_constraintTop_toTopOf="@+id/textViewFragmentInterlockDeviceFINSServerNode" />
+
+    <Button
+        android:id="@+id/buttonFragmentInterlockDeviceBypassEntries"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="32dp"
+        android:text="@string/fragment_interlock_device_bypass_button_title"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/buttonFragmentInterlockDeviceOpen"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFragmentInterlockDeviceOpen" />
+
+    <TextView
+        android:id="@+id/textViewFragmentInterlockDeviceBypassEntries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Bypass entries."
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentInterlockDeviceFINSServerNode"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentInterlockDeviceFINSServerNode" />
+
+    <Button
+        android:id="@+id/buttonFragmentInterlockDeviceConnect"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="32dp"
+        android:text="@string/fragment_interlock_device_button_connect"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentInterlockDeviceBypassEntries"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentInterlockDeviceBypassEntries" />
+
+    <Button
+        android:id="@+id/buttonFragmentInterlockDeviceDisconnect"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="32dp"
+        android:text="@string/fragment_interlock_device_button_disconnect"
+        app:layout_constraintStart_toEndOf="@+id/buttonFragmentInterlockDeviceConnect"
+        app:layout_constraintTop_toTopOf="@+id/buttonFragmentInterlockDeviceConnect" />
+
+    <Button
+        android:id="@+id/buttonFragmentInterlockDeviceClose"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="24dp"
+        android:text="@string/fragment_interlock_device_bypass_close"
+        app:layout_constraintStart_toEndOf="@+id/buttonFragmentInterlockDeviceOpen"
+        app:layout_constraintTop_toTopOf="@+id/buttonFragmentInterlockDeviceOpen" />
+
+    <Button
+        android:id="@+id/buttonFragmentInterlockDeviceRead"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="32dp"
+        android:text="@string/fragment_interlock_device_bypass_read"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/buttonFragmentInterlockDeviceDisconnect"
+        app:layout_constraintTop_toTopOf="@+id/buttonFragmentInterlockDeviceDisconnect" />
+
+    <Button
+        android:id="@+id/buttonFragmentInterlockDeviceOpen"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="32dp"
+        android:text="@string/fragment_interlock_device_bypass_open"
+        app:layout_constraintStart_toStartOf="@+id/buttonFragmentInterlockDeviceConnect"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFragmentInterlockDeviceConnect" />
+
+    <Button
+        android:id="@+id/buttonFragmentInterlockDeviceHeartBeat"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="32dp"
+        android:text="@string/fragment_interlock_device_bypass_heartbeat"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/buttonFragmentInterlockDeviceClose"
+        app:layout_constraintTop_toTopOf="@+id/buttonFragmentInterlockDeviceClose" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

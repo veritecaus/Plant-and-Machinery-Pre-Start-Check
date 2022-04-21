@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize">
+
+
+        <TextView
+            android:id="@+id/textViewFragmentQuestionYesNoCaption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="This is a yes/no question"
+            android:textSize="@dimen/prestart_standard_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonFragmentQuestionYesNoYes"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="YES"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonFragmentQuestionYesNoNo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewFragmentQuestionYesNoPic1" />
+
+        <Button
+            android:id="@+id/buttonFragmentQuestionYesNoNo"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text="NO"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonFragmentQuestionYesNoYes"
+            app:layout_constraintTop_toTopOf="@+id/buttonFragmentQuestionYesNoYes" />
+
+        <ImageView
+            android:id="@+id/imageViewFragmentQuestionYesNoPic1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFragmentQuestionYesNoComment"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textViewFragmentQuestionYesNoStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            android:text="Question 2 of 10"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBarFragmentQuestionYesNo"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/textViewFragmentQuestionYesNoStatus"
+            tools:layout_editor_absoluteX="242dp" />
+
+        <TextView
+            android:id="@+id/textViewFragmentQuestionYesNoComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Comment"
+            android:textSize="@dimen/prestart_standard_text_size_smaller"
+            app:layout_constraintEnd_toEndOf="@+id/textViewFragmentQuestionYesNoCaption"
+            app:layout_constraintStart_toStartOf="@+id/textViewFragmentQuestionYesNoCaption"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFragmentQuestionYesNoCaption" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

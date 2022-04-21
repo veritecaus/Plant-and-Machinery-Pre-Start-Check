@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize">
+
+
+    <TextView
+        android:id="@+id/textViewFragmentSettingsReportOptionsRep1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/fragment_settings_reporting_option_recipient_1"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentSettingsReportOptionsMsg1" />
+
+    <EditText
+        android:id="@+id/editTextFragmentSettingsReportingOptionsRep1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentSettingsReportOptionsRep1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentSettingsReportOptionsRep1" />
+
+    <TextView
+        android:id="@+id/textViewFragmentSettingsReportingOptionsRep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/fragment_settings_reporting_option_recipient_2"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextFragmentSettingsReportingOptionsRep1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFragmentSettingsReportingOptionsRep1" />
+
+    <EditText
+        android:id="@+id/editTextFragmentSettingsReportingOptionsRep2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentSettingsReportingOptionsRep2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentSettingsReportingOptionsRep2" />
+
+    <TextView
+        android:id="@+id/textViewFragmentSettingsReportingOptionsRep3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/fragment_settings_reporting_option_recipient_3"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintStart_toStartOf="@+id/editTextFragmentSettingsReportingOptionsRep2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFragmentSettingsReportingOptionsRep2" />
+
+    <EditText
+        android:id="@+id/editTextFragmentSettingsReportingOptionsRep3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentSettingsReportingOptionsRep3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentSettingsReportingOptionsRep3" />
+
+    <TextView
+        android:id="@+id/textViewFragmentSettingsReportingOptionsRep4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/fragment_settings_reporting_option_recipient_4"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintStart_toStartOf="@+id/editTextFragmentSettingsReportingOptionsRep3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFragmentSettingsReportingOptionsRep3" />
+
+    <EditText
+        android:id="@+id/editTextFragmentSettingsReportingOptionsRep4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentSettingsReportingOptionsRep4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentSettingsReportingOptionsRep4" />
+
+    <Spinner
+        android:id="@+id/spinnerFragmentSettingsReportingOptionsFreq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewFragmentSettingsReportOptionsFreq"
+        app:layout_constraintTop_toTopOf="@+id/textViewFragmentSettingsReportOptionsFreq" />
+
+    <TextView
+        android:id="@+id/textViewFragmentSettingsReportOptionsFreq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/fragment_settings_reporting_option_frequency"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintStart_toStartOf="@+id/editTextFragmentSettingsReportingOptionsRep4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFragmentSettingsReportingOptionsRep4" />
+
+    <TextView
+        android:id="@+id/textViewFragmentSettingsReportOptionsMsg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/fragment_settings_reporting_option_message_one"
+        android:textSize="@dimen/prestart_standard_text_size"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

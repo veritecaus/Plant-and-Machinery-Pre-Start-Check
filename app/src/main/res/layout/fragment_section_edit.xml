@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/textViewFragmentSectionEditTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Title"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFragmentSectionEditTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentSectionEditTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentSectionEditTitle" />
+
+    <TextView
+        android:id="@+id/textViewFragmentSectionEditDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Description"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextFragmentSectionEditTitle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFragmentSectionEditTitle" />
+
+    <EditText
+        android:id="@+id/editTextFragmentSectionEdtDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentSectionEditDesc"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentSectionEditDesc" />
+
+    <TextView
+        android:id="@+id/textViewFragmentSectionEditNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Section Number"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextFragmentSectionEdtDesc"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFragmentSectionEdtDesc" />
+
+    <EditText
+        android:id="@+id/editTextFragmentSectionEditNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentSectionEditNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentSectionEditNumber" />
+
+    <Switch
+        android:id="@+id/switchFragmentSectionEditShowCover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Show description as Cover Page ?"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextFragmentSectionEditNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFragmentSectionEditNumber" />
+
+    <Switch
+        android:id="@+id/switchFragmentSectionEditRandomize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Randomize questions in this section ?"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/switchFragmentSectionEditShowCover"
+        app:layout_constraintTop_toBottomOf="@+id/switchFragmentSectionEditShowCover" />
+
+    <Switch
+        android:id="@+id/switchFragmentSectionEditActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Active ?"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/switchFragmentSectionEditRandomize"
+        app:layout_constraintTop_toBottomOf="@+id/switchFragmentSectionEditRandomize" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

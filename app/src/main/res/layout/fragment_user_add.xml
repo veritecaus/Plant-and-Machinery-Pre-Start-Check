@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/textViewCaptionOperatorAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:text="User Setup"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCaptionOperatorAddFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/operator_add_caption_first_name"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCaptionOperatorAdd"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCaptionOperatorAdd" />
+
+    <EditText
+        android:id="@+id/editTextOperatorAddFirstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewCaptionOperatorAddFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCaptionOperatorAddFirstName" />
+
+    <TextView
+        android:id="@+id/textViewCaptionOperatorAddLasttName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/operator_add_caption_last_name"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextOperatorAddFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextOperatorAddFirstName" />
+
+    <EditText
+        android:id="@+id/editTextOperatorAddLastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewCaptionOperatorAddLasttName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCaptionOperatorAddLasttName" />
+
+    <Spinner
+        android:id="@+id/spinnerOperatorAddRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toEndOf="@+id/textViewCaptionOperatorAddRole"
+        app:layout_constraintTop_toTopOf="@+id/textViewCaptionOperatorAddRole" />
+
+    <TextView
+        android:id="@+id/textViewCaptionOpeatorAddPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/operator_add_caption_pin"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextOperatorAddLastName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextOperatorAddLastName" />
+
+    <EditText
+        android:id="@+id/editTextOperatorAddPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toEndOf="@+id/textViewCaptionOpeatorAddPin"
+        app:layout_constraintTop_toTopOf="@+id/textViewCaptionOpeatorAddPin" />
+
+    <TextView
+        android:id="@+id/textViewCaptionOperatorAddCreatedDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/operator_add_caption_created"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCaptionOperatorAddLastLogin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCaptionOperatorAddLastLogin" />
+
+    <TextView
+        android:id="@+id/textViewCaptionOperatorAddLastLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/operator_add_caption_last_login"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/switchOperatorAddEnabled"
+        app:layout_constraintTop_toBottomOf="@+id/switchOperatorAddEnabled" />
+
+    <TextView
+        android:id="@+id/textViewCaptionOperatorAddRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Role"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCaptionOpeatorAddPin"
+        app:layout_constraintTop_toBottomOf="@+id/editTextOperatorAddPin" />
+
+    <Switch
+        android:id="@+id/switchOperatorAddEnabled"
+        android:layout_width="184dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/operator_add_caption_enabled"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCaptionOperatorAddRole"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCaptionOperatorAddRole" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

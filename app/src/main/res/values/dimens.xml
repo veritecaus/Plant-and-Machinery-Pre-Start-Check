@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="button_width">150sp</dimen>
+    <dimen name="button_height">80sp</dimen>
+    <dimen name="prestart_text_size" />
+    <dimen name="prestart_standard_text_size">34sp</dimen>
+    <dimen name="prestart_standard_text_size_smaller">24sp</dimen>
+    <dimen name="button_height_inline">50dp</dimen>
+    <dimen name="image_preview_height">128dp</dimen>
+    <dimen name="image_preview_width">128dp</dimen>
+</resources>

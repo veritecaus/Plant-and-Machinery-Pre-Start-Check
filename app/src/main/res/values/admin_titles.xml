@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="email_report_admin_titles">
+        <item>Outbound Email Setup Server</item>
+        <item>Question - Report Options</item>
+        <item>Bypass - Report Options</item>
+    </string-array>
+
+</resources>

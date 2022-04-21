@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_menu_item_home"
+            android:title="@string/drawer_navigation_title_home"
+            android:visible="true"
+            android:onClick="drawer_menu_item_home_click_handler"/>
+
+        <item
+            android:id="@+id/nav_settings"
+            android:title="@string/drawer_navigation_title_settings"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_settings_email_report_admin"
+            android:title="@string/nav_settings_email_report_admin"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_settings_interlock_device"
+            android:title="@string/nav_settings_interlock_device_setup"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/nav_question_admin_start"
+            android:title="@string/drawer_navigation_title_question"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_sections"
+            android:title="@string/drawer_navigation_title_sections"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_report"
+            android:title="@string/drawer_navigation_title_report"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_setting_users"
+            android:title="@string/drawer_navigation_title_users"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_interlock_device"
+            android:title="@string/drawer_navigation_title_interlock_device"
+            android:visible="false"/>
+        <item
+            android:id="@+id/drawer_menu_item_logout"
+            android:title="@string/fragment_logout_title"
+            android:visible="true"
+            android:onClick="drawer_menu_item_logout_click_handler"/>
+
+
+    </group>
+</menu>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:id="@+id/constraintLayoutQuestionAdminAck">
+
+    <TextView
+        android:id="@+id/textViewFragmentQuestionAdminAckTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/fragment_question_admin_title"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFragmentQuestionAdminAckTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentQuestionAdminAckTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentQuestionAdminAckTitle" />
+
+    <TextView
+        android:id="@+id/textViewFragmentQuestionAdminAckSeq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/fragment_question_admin_sequence"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextFragmentQuestionAdminAckComment"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFragmentQuestionAdminAckComment" />
+
+    <EditText
+        android:id="@+id/editTextFragmentQuestionAdminAckSeq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textViewFragmentQuestionAdminAckSeq"
+        app:layout_constraintTop_toTopOf="@+id/textViewFragmentQuestionAdminAckSeq" />
+
+    <Switch
+        android:id="@+id/switchFragmentQuestionAdminAckActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/fragment_question_admin_enabled"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentQuestionAdminAckSeq"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentQuestionAdminAckSeq" />
+
+    <TextView
+        android:id="@+id/textViewFragmentQuestionAdminAckTimeout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/fragment_question_admin_timeout"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/switchFragmentQuestionAdminAckMachEnabled"
+        app:layout_constraintTop_toBottomOf="@+id/switchFragmentQuestionAdminAckMachEnabled" />
+
+    <EditText
+        android:id="@+id/editTextFragmentQuestionAdminAckTimeout"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textViewFragmentQuestionAdminAckTimeout"
+        app:layout_constraintTop_toTopOf="@+id/textViewFragmentQuestionAdminAckTimeout" />
+
+    <TextView
+        android:id="@+id/textViewFragmentQuestionAdminAckImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/fragment_question_admin_image_title"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentQuestionAdminAckTimeout"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentQuestionAdminAckTimeout" />
+
+    <ImageView
+        android:id="@+id/imageViewFragmentQuestionAdminAck"
+        android:layout_width="@dimen/image_preview_width"
+        android:layout_height="@dimen/image_preview_height"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewFragmentQuestionAdminAckImage"
+        app:layout_constraintTop_toTopOf="@+id/textViewFragmentQuestionAdminAckImage"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/buttonFragmentQuestionAdminAckImageBrowse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/fragment_question_admin_image_button_browse"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFragmentQuestionAdminAck"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFragmentQuestionAdminAck" />
+
+    <Button
+        android:id="@+id/buttonFragmentQuestionAdminAckImageClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/fragment_question_admin_image_clear"
+        app:layout_constraintStart_toStartOf="@+id/buttonFragmentQuestionAdminAckImageBrowse"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFragmentQuestionAdminAckImageBrowse" />
+
+    <TextView
+        android:id="@+id/textViewFragmentQuestionAdminAckComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/fragment_question_admin_comment"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextFragmentQuestionAdminAckTitle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFragmentQuestionAdminAckTitle" />
+
+    <EditText
+        android:id="@+id/editTextFragmentQuestionAdminAckComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="@dimen/prestart_standard_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewFragmentQuestionAdminAckComment"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFragmentQuestionAdminAckComment" />
+
+    <Switch
+        android:id="@+id/switchFragmentQuestionAdminAckMachEnabled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/fragment_question_admin_enable_machine"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/switchFragmentQuestionAdminAckActive"
+        app:layout_constraintTop_toBottomOf="@+id/switchFragmentQuestionAdminAckActive" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>
